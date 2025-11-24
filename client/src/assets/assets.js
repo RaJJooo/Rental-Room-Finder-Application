@@ -8,6 +8,10 @@ import logo from './logo.png';
 import react_logo from './react.svg';
 import search_icon from './search_icon.png';
 import title_logo from './title_logo.svg';
+import main_car from './main_car.jpg';
+import downloadappinfoimg from './downloadappinfoimg.webp'
+import playstore from './playstore.svg'
+import appstore from './appstore.svg'
 
 export const citylist=['Haldia', 'Tamluk', 'Panskura', 'Kolaghat', 'Mahisadal'];
 export const assets={
@@ -21,6 +25,10 @@ export const assets={
   react_logo,
   search_icon,
   title_logo,
+  main_car,
+  downloadappinfoimg,
+  playstore,
+  appstore
 };
 
 export const menulinks=[
