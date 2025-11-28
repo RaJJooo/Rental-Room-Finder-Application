@@ -9,13 +9,13 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-white border-t pt-16 pb-8 px-6">
+    <footer className="w-full  border-t pt-16 pb-8 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-12 text-gray-700">
 
         {/* Column 1 */}
         <div>
           <h2 className="text-3xl font-semibold">
-            Room<span className="text-[#00A86B]">Rent</span>®
+            Easy<span className="text-[#00A86B]">PGRooms</span>
           </h2>
 
           <p className="mt-4 leading-7">
@@ -27,7 +27,7 @@ const Footer = () => {
           </p>
 
           <a href="mailto:feedback@flatmate.in" className="text-blue-500 underline mt-3 block">
-            feedback@flatmate.in
+            feedback@easypgrooms.in
           </a>
 
           <button className="px-6 py-2 mt-5 bg-[#00A86B] text-white rounded-full hover:bg-[#008f5d] duration-300">
@@ -97,14 +97,14 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto mt-12 border-t pt-6 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-600">
         <p>
-          Product of <span className="font-semibold text-gray-800">Think Straight IT LLP</span>
+          
         </p>
 
         <button className="px-6 py-2 bg-gray-800 text-white rounded-full shadow-md hover:bg-gray-700 duration-300">
           Useful Links ▼
         </button>
 
-        <p>© 2025 RoomRent.in All Rights Reserved</p>
+        <p>© 2025 EasyPGRooms.in All Rights Reserved</p>
       </div>
     </footer>
   );

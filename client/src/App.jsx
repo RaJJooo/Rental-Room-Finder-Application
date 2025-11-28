@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import HomeDetails from './pages/HomeDetails';
 import Homes from './pages/Homes';
 import MyBookings from './pages/MyBookings';
+import About from './pages/About';
 
 const App = () => {
 
@@ -23,6 +24,7 @@ const App = () => {
         <Route path='/home-details/:id' element={<HomeDetails/>} />
         <Route path='/homes' element={<Homes/>} />
         <Route path='/my-bookings' element={<MyBookings/>} />
+        <Route path='/about' element={<About/>} />
       </Routes>
     </>
 

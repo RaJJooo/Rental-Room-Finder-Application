@@ -12,6 +12,21 @@ import main_car from './main_car.jpg';
 import downloadappinfoimg from './downloadappinfoimg.webp'
 import playstore from './playstore.svg'
 import appstore from './appstore.svg'
+import pg_boys from './pg_boys.avif'
+import pg_girls from './pg_girls.avif'
+import food from './food.webp'
+import laundry from './laundry.jpg'
+import ac from './ac.webp'
+import wifi from './wifi.jpg'
+import banner_person from './banner_person.jpg'
+import double_room from './double_room.webp'
+import private_room from './private_room.jpg'
+import triple_room from './triple_room.png'
+import home_icon from './home_icon.jpg'
+import aboutImg from './aboutImg.jpg'
+import aboutImg1 from './aboutImg1.webp'
+import aboutImg2 from './aboutImg2.jpg'
+
 
 export const citylist=['Haldia', 'Tamluk', 'Panskura', 'Kolaghat', 'Mahisadal'];
 export const assets={
@@ -28,7 +43,21 @@ export const assets={
   main_car,
   downloadappinfoimg,
   playstore,
-  appstore
+  appstore,
+  pg_boys,
+  pg_girls,
+  food,
+  laundry,
+  ac,
+  wifi,
+  banner_person,
+  double_room,
+  private_room,
+  triple_room,
+  home_icon,
+  aboutImg,
+  aboutImg1,
+  aboutImg2
 };
 
 export const menulinks=[
