@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import { assets, citylist } from '../assets/assets'
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
 
   const [pickupLocation, setPickupLocation] = useState('')
+  const navigate=useNavigate();
 
   return (
     <div className='h-screen flex flex-col items-center justify-center gap-14 text-center'>
@@ -14,7 +16,8 @@ const Hero = () => {
 
 
       {/* Hero picture */}
-      <img className='max-h-70 drop-shadow-2xl transition-transform duration-300 hover:scale-105' src={assets.main_car} alt="car" />
+      <img 
+      className='max-h-70 drop-shadow-2xl transition-transform duration-300 hover:scale-105' src={assets.main_car} alt="car" />
       
       <form className='flex flex-col md:flex-row items-start md:items-center justify-between p-6 rounded-lg md:rounded-full w-full max-w-80 md:max-w-200 bg-amber-200 shadow-[0px_8px_20px_rgba(0,0,0,0,1)]'>
         <div className='flex flex-col md:flex-row items-start md:items-center gap-10 '>
@@ -37,7 +40,8 @@ const Hero = () => {
           <input type="date" id='return-date' className='text-sm text-gray-500' required />
         </div>
 
-        <button className='flex items-center justify-center gap-1 px-9 py-3 max-sm:mt-4 bg-amber-100 hover:bg-amber-400 rounded-full cursor-pointer hover:scale-115'>
+        <button onClick={()=>{navigate("/rooms"); scrollTo(0,0)}}
+        className='flex items-center justify-center gap-1 px-9 py-3 max-sm:mt-4 bg-amber-100 hover:bg-amber-400 rounded-full cursor-pointer hover:scale-115'>
           <img className='h-3 brightness-200 ' src={assets.search_icon} alt="" />
           Search
           </button>

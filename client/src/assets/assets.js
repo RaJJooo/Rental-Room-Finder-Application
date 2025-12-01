@@ -26,6 +26,26 @@ import home_icon from './home_icon.jpg'
 import aboutImg from './aboutImg.jpg'
 import aboutImg1 from './aboutImg1.webp'
 import aboutImg2 from './aboutImg2.jpg'
+import arrow_icon from './arrow_icon.svg'
+import room1_1 from './room1_1.jpg'
+import room1_3 from './room1_3.jpg'
+import room1_4 from './room1_4.jpeg'
+import room1_5 from './room1_5.jpg'
+import room1_6 from './room1_6.jpeg'
+import room1_7 from './room1_7.jpg'
+
+import room2_1 from './room2_1.jpg'
+import room2_3 from './room2_3.jpg'
+import room2_4 from './room2_4.jpg'
+import room2_5 from './room2_5.jpg'
+import room2_2 from './room2_2.jpg'
+
+import room3_1 from './room3_1.jpg'
+import room3_3 from './room3_3.jpg'
+import room3_4 from './room3_4.jpg'
+import room3_5 from './room3_5.jpg'
+import room3_2 from './room3_2.jpg'
+
 
 
 export const citylist=['Haldia', 'Tamluk', 'Panskura', 'Kolaghat', 'Mahisadal'];
@@ -57,12 +77,14 @@ export const assets={
   home_icon,
   aboutImg,
   aboutImg1,
-  aboutImg2
+  aboutImg2,
+  arrow_icon,
+
 };
 
 export const menulinks=[
   { name:"Home", path: "/" },
-  { name:"Rooms", path: "/cars" },
+  { name:"Rooms", path: "/rooms" },
   { name:"My Bookings", path: "/my-bookings" },
 ]
 
@@ -85,45 +107,70 @@ export const dummyroomdata = [
   {
     _id: "room001",
     owner: "DummyName",
-    title: "Cozy Single Room near College",
-    location: "Haldia",
+    title: "Girls PG/Paying Guest in Kshudiram Nagar, Haldia",
+    location: "Kshudiram Nagar, Haldia, West Bengal",
     price: 2500,
-    image: logo, // you can replace with actual room image later
-    type: "Single Room",
-    amenities: ["Free WiFi", "Attached Bathroom", "24x7 Water", "Fan"],
-    available: true,
-    description: "A clean and affordable single room ideal for students and working professionals.",
-    postedOn: "2025-11-01",
+    images: [room1_3,room1_1, room1_4, room1_5, room1_6, room1_7], // you can replace with actual room image later
     rating: 4.5,
-  },
-  {
-    _id: "room002",
-    owner: "DummyName",
-    title: "Furnished Double Room in City Center",
-    location: "Tamluk",
-    price: 4000,
-    image: logo,
-    type: "Double Room",
-    amenities: ["AC", "TV", "Geyser", "Attached Balcony"],
     available: true,
-    description: "Spacious and well-ventilated double room near market area.",
-    postedOn: "2025-10-20",
-    rating: 4.7,
+    amenities: ["Housekeeping", "24x7 Water"],
+    Foods: false,
+    property_type: "Flat",
+    Balcony: true,
+    Contact: 9748236245,
+    Furnished: ["1 Bed", "1 Fan", "No AC", "No Study Table", "No Purifier"],
+    AC: false,
+    type: "Single Room",
+    Rules: ["Last entry time is 10:30pm","No vistors","Only for girls","Pets, Smoking, Alcohol all of these are prohibited"],
   },
   {
-    _id: "room003",
-    owner: "DummyName",
-    title: "Budget Room with Shared Kitchen",
-    location: "Kolaghat",
-    price: 1800,
-    image: logo,
-    type: "Shared Room",
-    amenities: ["Shared Kitchen", "Common Bathroom", "WiFi", "Laundry Service"],
-    available: false,
-    description: "Low-cost room for students with basic facilities and shared amenities.",
-    postedOn: "2025-09-15",
-    rating: 4.2,
-  },
+  _id: "room002",
+  owner: "Sanjana PG Homes",
+  title: "Girls PG Near Haldia Township",
+  location: "Nehru Avenue, Haldia, West Bengal",
+  price: 3200,
+  images: [room2_1, room2_2, room2_3, room2_4, room2_5],
+  rating: 4.2,
+  available: true,
+  amenities: ["24x7 Water Supply", "CCTV Security"],
+  Foods: true,
+  property_type: "Hostel Building",
+  Balcony: false,
+  Contact: 8695234789,
+  Furnished: ["1 Bed", "1 Fan", "1 Table", "Light", "Curtains"],
+  AC: false,
+  type: "Single Sharing Room",
+  Rules: [
+    "Entry allowed till 10:00pm",
+    "No male visitors allowed",
+    "Keep rooms clean",
+    "Loud music not allowed"
+  ],
+},
+{
+  _id: "room003",
+  owner: "Aditi Stayhouse",
+  title: "Fully Furnished Girls Room in Durgachak",
+  location: "Durgachak Colony, Haldia, West Bengal",
+  price: 4000,
+  images: [room3_1, room3_2, room3_3, room3_4, room3_5],
+  rating: 4.8,
+  available: false,
+  amenities: ["Housekeeping", "Electricity Backup", "Filtered Water"],
+  Foods: true,
+  property_type: "Independent Room",
+  Balcony: true,
+  Contact: 9123457680,
+  Furnished: ["1 Bed", "1 Fan", "Study Table", "Chair", "Purifier"],
+  AC: true,
+  type: "Private Room",
+  Rules: [
+    "Entry time is 10:00pm",
+    "No drinking/smoking",
+    "Maintain cleanliness",
+    "Guests allowed only on weekends (Girls only)"
+  ],
+},
 ];
 
 

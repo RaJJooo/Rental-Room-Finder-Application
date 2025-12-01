@@ -8,6 +8,8 @@ import SellRentBanner from '../components/SellRentBanner'
 import RoomSharingOptions from '../components/RoomSharingOptions'
 import AboutSection from '../components/AboutSection'
 import Testimonials from '../components/Testimonials'
+import Faqs from '../components/Faqs'
+import Newsletter from '../components/Newsletter'
 
 const Home = () => {
   return (
@@ -20,7 +22,8 @@ const Home = () => {
       <SellRentBanner/>
       <Testimonials/>
       <DownloadAppInfo/>
-      <Footer/>
+      <Newsletter/>
+      <Faqs/>
     </div>
   )
 }

@@ -3,8 +3,12 @@ import privateIcon from "../assets/private_room.jpg";     // update path
 import doubleIcon from "../assets/double_room.webp";       // update path
 import tripleIcon from "../assets/triple_room.png";       // update path
 import homeIcon from "../assets/home_icon.jpg";           // update path
+import { useNavigate } from "react-router-dom";
 
 const RoomSharingOptions = () => {
+
+  const navigate=useNavigate();
+
   const cards = [
     {
       title: "Private Room",
@@ -36,7 +40,8 @@ const RoomSharingOptions = () => {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div onClick={()=>{navigate("/rooms"); scrollTo(0,0)}}
+      className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {cards.map((card, index) => (
           <div
             key={index}

@@ -5,14 +5,14 @@ import girlsImg from "../assets/pg_girls.avif";   // update path
 
 const CuratedPGCollections = () => {
   return (
-    <div className="w-full px-6 md:px-16 py-10 ">
+    <div className="w-full px-6 md:px-16 pb-10 ">
       <h1 className="text-4xl font-bold mb-2">PG collections</h1>
       <p className="text-gray-600 mb-8">in West Bengal</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
         {/* Boys Card */}
-        <Link to="/pg/boys">
+        <Link to="/rooms">
           <div className="relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
             <img
               src={boysImg}
@@ -27,7 +27,7 @@ const CuratedPGCollections = () => {
         </Link>
 
         {/* Girls Card */}
-        <Link to="/pg/girls">
+        <Link to="/rooms">
           <div className="relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
             <img
               src={girlsImg}

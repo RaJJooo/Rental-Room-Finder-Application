@@ -3,8 +3,12 @@ import foodImg from "../assets/food.webp";       // update path
 import wifiImg from "../assets/wifi.jpg";       // update path
 import acImg from "../assets/ac.webp";           // update path
 import laundryImg from "../assets/laundry.jpg"; // update path
+import { useNavigate } from "react-router-dom";
 
 const Services = () => {
+
+  const navigate=useNavigate();
+
   const amenities = [
     { title: "Food Service", image: foodImg },
     { title: "Wifi", image: wifiImg },
@@ -19,7 +23,8 @@ const Services = () => {
         Choose your preferred amenities and services
       </p>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div onClick={()=>{navigate("/rooms"); scrollTo(0,0)}}
+      className="grid grid-cols-2 md:grid-cols-4 gap-6">
 
         {amenities.map((item, index) => (
           <div

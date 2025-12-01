@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const AboutSection = () => {
   const navigate = useNavigate();
   return (
-    <div className="w-full py-20 px-6 md:px-20 flex flex-col md:flex-row items-center justify-around gap-16 ">
+    <div className="w-full py-0 px-6 md:px-20 flex flex-col md:flex-row items-center justify-around gap-16 ">
       
       {/* Left Text Section */}
       <div className="max-w-xl">
@@ -26,7 +26,7 @@ const AboutSection = () => {
 
         {/* Button */}
         <button 
-          onClick={() => navigate("/about")}
+          onClick={() => {navigate("/about"); scrollTo(0,0) }} 
           className="mt-8 border-2 border-blue-500 text-blue-500 px-8 py-3 rounded-full text-lg font-medium hover:bg-blue-500 hover:text-white transition">
           Read More
         </button>

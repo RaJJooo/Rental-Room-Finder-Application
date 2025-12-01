@@ -6,6 +6,7 @@ import HomeDetails from './pages/HomeDetails';
 import Homes from './pages/Homes';
 import MyBookings from './pages/MyBookings';
 import About from './pages/About';
+import Footer from './components/Foooter';
 
 const App = () => {
 
@@ -22,10 +23,12 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/home-details/:id' element={<HomeDetails/>} />
-        <Route path='/homes' element={<Homes/>} />
+        <Route path='/rooms' element={<Homes/>} />
         <Route path='/my-bookings' element={<MyBookings/>} />
         <Route path='/about' element={<About/>} />
       </Routes>
+
+      {!isOwnerPath && <Footer/>}
     </>
 
     
